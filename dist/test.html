@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>接口测试页面</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+<button>发送请求</button>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+  $("button").click(function() {
+    $.ajax({
+      url: "/ajax/page",
+      success: function(resp) {
+        console.log(resp);
+        $("body").append(JSON.stringify(resp));
+      }
+    })
+  });
+</script>
+</html>
