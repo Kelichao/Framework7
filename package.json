@@ -1,0 +1,19 @@
+{
+  "name": "framework_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "i18next": "^8.1.0",
+    "iscroll": "^5.2.0",
+    "jquery": "^3.2.1"
+  }
+}

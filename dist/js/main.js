@@ -1,7 +1,16 @@
-// // 初始化
+// 初始化
+var myApp = new Framework7({
+	pushState: true,
+});
+
+// 添加视图
+var mainView = myApp.addView('.view-main');
+
+
+// 初始化
 // var myApp = new Framework7({
 //           pushState: true,
-//           swipePanel: 'left',
+//           // swipePanel: 'left',
 //           // ... other parameters
 //     });
 
@@ -73,11 +82,11 @@
 //     }
 // });
 
-// 初始化
-var myApp = new Framework7();
+// // 初始化
+// var myApp = new Framework7();
 
-// 添加视图
-var mainView = myApp.addView('.view-main');
+// // 添加视图
+// var mainView = myApp.addView('.view-main');
 
 // // 前进 ：切换视图中的链接，用以替换内容
 // mainView.router.load({
@@ -91,13 +100,13 @@ var mainView = myApp.addView('.view-main');
 
 // 动态页面的写法
 // HTML Content of new page:
-var newPageContent = `<div class="page" data-page="my-page"> 
-                        <div class="page-content"> 
-                          <p>Here comes new page</p> 
-                        </div> 
-                      </div>`;
+// var newPageContent = `<div class="page" data-page="my-page"> 
+//                         <div class="page-content"> 
+//                           <p>Here comes new page</p> 
+//                         </div> 
+//                       </div>`;
 
- ;''
+//  ;''
  
-//Load new content as new page
-mainView.router.loadContent(newPageContent);
+// //Load new content as new page
+// mainView.router.loadContent(newPageContent);
