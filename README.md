@@ -37,7 +37,7 @@ preprocess |  这个回调函数允许你修改加载路由器（主要是Ajax�
 # Push State
 选项名 | 说明
 ------------ | -------------
-pushstate |  hash值控制历史记录
+pushstate |  是否开启hash值控制历史记录
 pushstateseparator |  hash值的分割符
 pushstateroot |  ..
 pushstatenoanimation |  历史记录的过度动画
