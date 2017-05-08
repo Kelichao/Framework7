@@ -2,7 +2,7 @@
 
 > 实例化参数简介
 
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 material |  水波纹
 materialpageloaddelay | 动画延迟,提高效率
@@ -21,7 +21,7 @@ tapholddelay |  触发
 tapholdpreventclicks | ---
 
 # Navigation / Router(导航/路由)
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 router  |  如果你有自己的路由实现，你可以禁用默认的路由
 ajaxlinks |  指定哪些链接需要用ajax加载，默认情况下（当为undefined时）Framework7 会使用ajax加载所有的链接。
@@ -35,7 +35,7 @@ preloadpreviouspage |  启用/禁用的前页预压当你深入导航。
 preprocess |  这个回调函数允许你修改加载路由器（主要是Ajax）内容之前，将它注射到DOM。
 
 # Push State
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 pushstate |  hash值控制历史记录
 pushstateseparator |  hash值的分割符
@@ -45,7 +45,7 @@ pushstatepreventonload| -
 
 
 # Swipe back (iOS theme only) 
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 swipebackpage | 	启用/禁用刷从屏幕左边缘回到前一页的能力。
 swipebackpagethreshold	 |  “触摸”距离将超过这个值开始。
@@ -54,12 +54,12 @@ swipebackpageanimateshadow	 | 启用/禁用刷卡后作用在箱阴影动画。
 swipebackpageanimateopacity	 | 启用/禁用不透明度动画在刷卡的反作用。
 
 # Sortable Lists 
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 sortable |  如果你不使用排序列表，您可以禁用它潜在的更好的性能。
 
 # Side Panels
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 swipepanel | 	如果你想使能力打开侧面板，你可以在这里通过刷卡“左”（左面板）或“右”（右面板）。
 swipepanelcloseopposite | 	这个参数给出了利用滑动关闭对面板的能力。例如，如果你的swipepanel是“左”，那么你可以关闭“刷卡”面板。
@@ -70,7 +70,7 @@ swipepanelthreshold	 | 面板不会移动刷卡如果“触摸”距离将小于
 panelsclosebyoutside |  启用/禁用点击在面板关闭面板的能力（在面板的覆盖）
 
 # Modals (弹窗)
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 modaltitle	 |  默认的标题（警戒，确认，提示）
 modalbuttonok	 |  默认文本模式的“确定”按钮
@@ -87,7 +87,7 @@ modalpasswordplaceholder |  占位符文本密码输入登录名和密码模式
 modalstack |  此功能不允许打开多个模式的同时，并会自动打开下一个模态当你关闭当前。这样的行为类似于浏览器本地警报
 
 # Smart Select 
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 smartselectopenin |  指定默认的方式聪明的选择应该打开。可以'页'，'弹出'或'人'
 smartselectbacktemplate	 | 智能选择页面导航栏返回链接的HTML模板
@@ -101,7 +101,7 @@ smartselectformtheme |  10个默认颜色主题在智能选择页面/弹出表�
 smartselectnavbartheme |  10个默认颜色主题在智能选择页面/弹出式导航栏
 
 # Navbars / Toolbars（导航栏，工具栏） 
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 hidenavbaronpagescroll	 |  导航栏会自动隐藏页面向下滚动，并成为滚动可见
 hidetoolbaronpagescroll	 | 工具栏会自动隐藏页面向下滚动，并成为滚动可见
@@ -111,14 +111,14 @@ showbarsonpagescrolltop	布 | 酒吧不会成为可见当你滚动页面顶部�
 scrolltoponnavbarclick	 | 在导航栏的“中心”的元素将滚动当前活动页面顶部的每个点击
 
 # Images Lazy Load
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 imageslazyloadthreshold	 | 加载图像出现在屏幕上的时候。使用此参数如果你想载入图像前。设置为50将加载图像时，它的50像素才能显示在视口
 imageslazyloadsequential |  如果启用，然后懒洋洋的图像将被加载一个当他们出现在视口
 imageslazyloadplaceholder | 懒加载图像占位符显示在源图像未加载。默认情况下它是1x1像素的图像
 
 # Notifications(通知)
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 notificationtitle	 | 违约通知title for alliOS主题
 notificationsubtitle | 所有通知默认字幕iOS主题
@@ -129,7 +129,7 @@ notificationcloseicon | 如果你想显示关闭图标（按钮）通知的默�
 notificationclosebuttontext | “关闭”按钮默认文本为snackbars材料主题
 
 # template7 
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 template7pages	 | 使template7 Ajax和动态页面的渲染。
 template7data	 |  参数存储模板/网页template7渲染数据。
@@ -137,7 +137,7 @@ precompiletemplates | 使用此选项可以将所有template7模板自动编译�
 templates |  template7编译模板对象。
 
 # Page Callbacks 
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 onpagebeforeinit |  回调函数将被执行时，framework7只是插入新页面的DOM。不一样的“pagebeforeinit”页事件
 onpageinit |  回调函数将被执行时，framework7初始化所需页面的组件和导航栏。不一样的“pageinit”页事件
@@ -148,13 +148,13 @@ onpageback |  回调函数将被执行之前，“回”的转变。“onpagebef
 onpageafterback	 |  回调函数，将在“背”过渡执行。“onpageafteranimation”是这个回调将是对“旧”的页面执行的页面，从中心到右滑差。不一样的“pageafterback”页事件
 
 # Ajax Callbacks
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 onajaxstart	 |  回调函数会在Ajax请求开始执行。这个函数接受电子数据作为参数。
 onajaxcomplete	 |  回调函数将在Ajax请求执行。这个函数接受电子数据作为参数。
 
 # Namespace 
-选线名 | 说明
+选项名 | 说明
 ------------ | -------------
 viewClass | 你的视图元素的类名称
 viewmainclass | 类的名字作为你主要的景观元素
