@@ -17,19 +17,17 @@
   </head>
 <body>
 
-    <!-- Views 是应用主容器。一个应用中只能有一个 Views -->
     <div class="views">
-        <!-- View 可以放在应用中的任何位置，所有的可见View都应该放在Views中。用来做页面切换的动画。-->
-        <!-- 主视图会有一个 view-main 的class，会默认把所有的链接加载的页面放进主视图中。  pushState hash navigation 的时候也是只在主视图中工作。 -->
         <div class="view view-main">
-            <!-- Navbar-->
-            <!-- Pages -->
+            <!-- Pages是page在同一个View中的容器，是必须的，所有的页面切换都在这里-->
             <div class="pages">
+            	<!--每一个Page都应该放在Pages容器中，Pages必须是View的子元素-->
+            	<!-- data-page用于对应回调函数，非常有用 -->
                 <div class="page" data-page="home">
                     <div class="page-content">
-                        <h2>我是主视图内容</h2>
-                        <!-- 额外的视图外部需要包裹的是page容器 -->
-                        <a href="test1.html">前往其他视图</a>
+                        <h2>我是Page的demo</h2>
+                        <h3>data-page用于对应回调函数，非常有用 </h3>
+                        <h4>每一个Page都应该放在Pages容器中，Pages必须是View的子元素</h4>
                     </div>
                 </div>
             </div>

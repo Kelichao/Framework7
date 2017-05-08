@@ -25,7 +25,8 @@ app.get('/user', function (req, res) {
 
 // 监听3000端口
 var server = app.listen(3000, function () {
-	console.log("开始了http://localhost:3000/test.html")
+	console.log("视图跳转请打开  http://localhost:3000/test.html")
+	console.log("pages解析请打开  http://localhost:3000/test2.html")
 });
 
 app.get("/ajax/page", function(req, res){
