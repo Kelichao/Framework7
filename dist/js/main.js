@@ -6,6 +6,14 @@ var myApp = new Framework7({
 // 添加视图
 var mainView = myApp.addView('.view-main');
 
+// 为工具栏添加方法切换active的class即可
+var $$ = Dom7;
+$$(".toolbar .tab-link").click(function() {
+	var $this = $$(this);
+	
+	$this.siblings().removeClass("active");
+	$this.addClass("active");
+});
 
 // 初始化
 // var myApp = new Framework7({
