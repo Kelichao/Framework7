@@ -13,6 +13,9 @@ $$(".toolbar .tab-link").click(function() {
 	
 	$this.siblings().removeClass("active");
 	$this.addClass("active");
+
+	// 打开弹窗
+	myApp.alert("你好", "我是弹窗", function(){console.log("打开了弹窗")});
 });
 
 // 初始化
