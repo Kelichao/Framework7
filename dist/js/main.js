@@ -8,12 +8,12 @@ var mainView = myApp.addView('.view-main');
 
 // 为工具栏添加方法切换active的class即可
 var $$ = Dom7;
-$$(".toolbar .tab-link").click(function() {
-	var $this = $$(this);
+// $$(".toolbar .tab-link").click(function() {
+// 	var $this = $$(this);
 	
-	$this.siblings().removeClass("active");
-	$this.addClass("active");
-});
+// 	$this.siblings().removeClass("active");
+// 	$this.addClass("active");
+// });
 
 $$(".alert").click(function() {
 	// 打开弹窗 title[,content,callbacksOK]

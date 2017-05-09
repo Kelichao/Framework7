@@ -59,8 +59,8 @@
             	<!--每一个Page都应该放在Pages容器中，Pages必须是View的子元素-->
             	<!-- data-page用于对应回调函数，非常有用 -->
                 <div class="page" data-page="home">
-                	<!-- 导航栏放在body內，放在page内部 -->
-                	<div class="navbar">
+                	<!-- 导航栏放在body內或者，放在page内部 -->
+<!--                 	<div class="navbar">
                 	    <div class="navbar-inner">
                 	        <div class="left">
                 	            <a href="#" class="link">
@@ -76,7 +76,7 @@
                 	            </a>
                 	        </div>
                 	    </div>
-                	</div>
+                	</div> -->
                 	<!-- 导航栏结束 -->
 
                 	<!-- 内容开始 -->
@@ -90,6 +90,26 @@
                         <a href="javascript:;" class="message">通知</a>
                     </div>
                     <!-- 内容结束 -->
+
+                    <!-- toolbar -->
+                    <div data-page="indexView" class="page tabbar-labels-fixed">
+                        <div class="tabs h100p">
+                            <div id="tab1" class="tab active">
+                    homeView
+                            </div>
+                            <div id="tab2" class="page-content tab">
+                                tab2View
+
+                            </div>
+                            <div id="tab3" class="page-content tab">
+                                tab3View
+                            </div>
+                            <div id="tab4" class="page-content tab">
+                                tab3View
+                            </div>
+                        </div>
+                    </div>
+                    <!-- toolbar结束 -->
 
                     <!-- 工具栏开始 -->
                     <div class="toolbar tabbar tabbar-labels">
