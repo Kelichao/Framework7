@@ -13,9 +13,44 @@ $$(".toolbar .tab-link").click(function() {
 	
 	$this.siblings().removeClass("active");
 	$this.addClass("active");
+});
 
-	// 打开弹窗
+$$(".alert").click(function() {
+	// 打开弹窗 title[,content,callbacksOK]
 	myApp.alert("你好", "我是弹窗", function(){console.log("打开了弹窗")});
+});
+
+$$(".confirm").click(function() {
+	// title[,content,callbacksOK, callbackCancel]
+	myApp.confirm("你好", "我是弹窗", function(){console.log(1)}, function(){console.log(0)});
+});
+
+// 临时视图popup
+$$('.create-popup').on('click', function () {
+  var popupHTML = '<div class="popup">'+
+                    '<div class="content-block">'+
+                      '<p>Popup created dynamically.</p>'+
+                      '<p><a href="#" class="close-popup">Close me</a></p>'+
+                    '</div>'+
+                  '</div>'
+  myApp.popup(popupHTML);
+}); 
+
+$$('.message').on('click', function () {
+    myApp.addNotification({
+    	// 主标题
+        title: '真是个酷炫狂拽的App',
+        // 小标题
+        subtitle: '来自土豆的消息',
+        // 内容
+        message: '地瓜地瓜，土豆呼叫地瓜。在9点方向发现如花，BalaBalaBala',
+        // 头像
+        media: '<img width="44" style="border-radius:100%" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg">',
+        // 关闭按钮回调
+        onClose: function () {
+            myApp.alert('通知被关闭了~');
+        }
+    });
 });
 
 // 初始化
