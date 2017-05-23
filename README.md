@@ -139,7 +139,8 @@ templates |  template7编译模板对象。
 # Page Callbacks 
 选项名 | 说明
 ------------ | -------------
-onPageBeforeInit |  回调函数将被执行时，framework7只是插入新页面的DOM。不一样的“pagebeforeinit”页事件
+onPageBeforeInit |  回调函数将被执行时，framework7只是插入新页面的DOM。
+onPageReinit |  回调函数将被执行时，重载页面。
 onPageInit |  回调函数将被执行时，framework7初始化所需页面的组件和导航栏。不一样的“pageinit”页事件
 onPageBeforeAnimation |  回调函数将被执行的时候一切都初始化和页面（和导航栏）准备的动画。不一样的“pagebeforeanimation”页事件
 onpageAfterAnimation |  回调函数将被执行后的页面（和导航栏）动画。不一样的“pageafteranimation”页事件
