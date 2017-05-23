@@ -139,13 +139,13 @@ templates |  template7编译模板对象。
 # Page Callbacks 
 选项名 | 说明
 ------------ | -------------
-onpagebeforeinit |  回调函数将被执行时，framework7只是插入新页面的DOM。不一样的“pagebeforeinit”页事件
-onpageinit |  回调函数将被执行时，framework7初始化所需页面的组件和导航栏。不一样的“pageinit”页事件
-onpagebeforeanimation |  回调函数将被执行的时候一切都初始化和页面（和导航栏）准备的动画。不一样的“pagebeforeanimation”页事件
-onpageafteranimation |  回调函数将被执行后的页面（和导航栏）动画。不一样的“pageafteranimation”页事件
-onpagebeforeremove |  回调函数将被执行之前，页面将被删除从DOM。不一样的“pagebeforeremove”页事件
-onpageback |  回调函数将被执行之前，“回”的转变。“onpagebeforeanimation”是这个回调将是对“旧”的页面执行的页面，从中心到右滑差。不一样的“pageback”页事件
-onpageafterback	 |  回调函数，将在“背”过渡执行。“onpageafteranimation”是这个回调将是对“旧”的页面执行的页面，从中心到右滑差。不一样的“pageafterback”页事件
+onPageBeforeInit |  回调函数将被执行时，framework7只是插入新页面的DOM。不一样的“pagebeforeinit”页事件
+onPageInit |  回调函数将被执行时，framework7初始化所需页面的组件和导航栏。不一样的“pageinit”页事件
+onPageBeforeAnimation |  回调函数将被执行的时候一切都初始化和页面（和导航栏）准备的动画。不一样的“pagebeforeanimation”页事件
+onpageAfterAnimation |  回调函数将被执行后的页面（和导航栏）动画。不一样的“pageafteranimation”页事件
+onPageBeforeRemove |  回调函数将被执行之前，页面将被删除从DOM。不一样的“pagebeforeremove”页事件
+onPageBack |  回调函数将被执行之前，“回”的转变。“onpagebeforeanimation”是这个回调将是对“旧”的页面执行的页面，从中心到右滑差。不一样的“pageBack”页事件
+onPageAfterBack	 |  回调函数，将在“背”过渡执行。“onpageafteranimation”是这个回调将是对“旧”的页面执行的页面，从中心到右滑差。不一样的“pageafterBack”页事件
 
 # Ajax Callbacks
 选项名 | 说明
