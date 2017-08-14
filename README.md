@@ -4,7 +4,7 @@
 
 选项名 | 说明
 ------------ | -------------
-material |  水波纹
+material |  水波纹 需引入"framework7.material.min.css"  framework7.material.colors.less;
 materialpageloaddelay | 动画延迟,提高效率
 materialripple |  启用/禁用特定材料的触摸的涟漪效应
 materialrippleelements |  CSS选择器的元素应用在点击触摸的涟漪效应
